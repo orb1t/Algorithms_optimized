@@ -29,7 +29,7 @@ public class LCA_node {
     }
     
     
-    public node LCA(node root,node n1,node n2)  //not efficient ..
+    public node LCA(node root,node n1,node n2)
     {  
         if(root==null)
             return null;
