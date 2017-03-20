@@ -21,33 +21,29 @@ public class LevelOrderRunner implements TraversalRunner {
 
         while (!queue.isEmpty()) {
 
-            TreeNode temp = (TreeNode)queue.remove();
-
-            if(temp.left!=null)
-            {
+            TreeNode temp = (TreeNode) queue.remove();
+            System.out.print(temp.data);
+            if (temp.left != null) {
                 child++;
                 queue.add(temp.left);
             }
 
-            if(temp.right!=null)
-            {
+            if (temp.right != null) {
                 child++;
                 queue.add(temp.right);
             }
 
 
-            parent --;
-            if(parent == 0){
-
-                if(!queue.isEmpty()){
+            parent--;
+            if (parent == 0) {
+                System.out.println();
+               /* if(!queue.isEmpty()){
                     TreeNode answer = (TreeNode)(queue.peek());
-                    System.out.println(answer.data);}
+                   System.out.println(answer.data);}*/
                 parent = child;
                 child = 0;
 
             }
-
-
 
 
         }

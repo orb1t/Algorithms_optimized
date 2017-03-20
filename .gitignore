@@ -44,3 +44,6 @@ Temporary Items
 
 *.name
 *.iml
+.idea/*.*
+.out/*.*
+.idea/misc.xml
