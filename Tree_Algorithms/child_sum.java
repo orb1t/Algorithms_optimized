@@ -7,7 +7,7 @@
 
 /**
  *
- * @author Jerry
+ * @author Prit Sheth
  */
 public class child_sum {
     

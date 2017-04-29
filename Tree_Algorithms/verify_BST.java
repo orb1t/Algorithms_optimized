@@ -8,7 +8,7 @@
 
 /**
  *
- * @author Jerry
+ * @author Prit Sheth
  */
 public class verify_BST {
     

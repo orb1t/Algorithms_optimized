@@ -1,5 +1,7 @@
+package TreePrinter;
+
 /**
- * Created by Jerry on 20-03-2017.
+ * Created by Prit Sheth on 20-03-2017.
  */
 public class Main {
 
@@ -35,9 +37,6 @@ public class Main {
         root5.left = root9;
         root3.right = root7;
         root4.left = root8;
-
-LevelOrderRunner levelOrderRunner = new LevelOrderRunner();
-        levelOrderRunner.traverse(root);
 
 
     }

@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 /**
- * Created by Jerry on 16-04-2017.
+ * Created by Prit Sheth on 16-04-2017.
  */
 public class CircleCollision {
 

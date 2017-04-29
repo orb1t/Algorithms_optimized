@@ -7,7 +7,7 @@
 
 /**
  *
- * @author Jerry
+ * @author Prit Sheth
  */
 public class mirror_tree {
      public void make_mirror(node root)//change itselft

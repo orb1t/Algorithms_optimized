@@ -1,5 +1,5 @@
 /**
- * Created by Jerry on 20-03-2017.
+ * Created by Prit Sheth on 20-03-2017.
  */
 public class Main {
 
@@ -15,18 +15,6 @@ public class Main {
 
 
     public static void main(String[] args) {
-
-        TreeNode root =  getDummyTree();
-MirrorCreator mirrorCreator = new MirrorCreator();
-mirrorCreator.createMirror(root);
-        LevelOrderRunner levelOrderRunner = new LevelOrderRunner();
-        levelOrderRunner.traverse(root);
-
-
-
-    }
-
-    private static TreeNode getDummyTree() {
         TreeNode root = new TreeNode(0);
         TreeNode root1 = new TreeNode(1);
         TreeNode root2 = new TreeNode(2);
@@ -48,8 +36,13 @@ mirrorCreator.createMirror(root);
         root3.right = root7;
         root4.left = root8;
 
-        return root;
+
+
+
     }
+
+
+
 
 
 }

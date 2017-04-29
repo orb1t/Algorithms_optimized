@@ -7,7 +7,7 @@
 
 /**
  *
- * @author Jerry
+ * @author Prit Sheth
  */
 public class maxsum_path {
     

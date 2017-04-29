@@ -8,7 +8,7 @@ package graphi;
 
 /**
  *
- * @author Jerry
+ * @author Prit Sheth
  */
 public class Graphi {
 

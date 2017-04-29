@@ -3,7 +3,7 @@ import com.sun.deploy.util.ArrayUtil;
 import java.util.Collections;
 
 /**
- * Created by Jerry on 25-03-2017.
+ * Created by Prit Sheth on 25-03-2017.
  */
 public class SegmentTree {
 

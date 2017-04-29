@@ -5,7 +5,7 @@ import java.util.Set;
 import java.util.TreeSet;
 
 /**
- * Created by Jerry on 12-04-2017.
+ * Created by Prit Sheth on 12-04-2017.
  */
 public class BearAndRow01 {
     public static void main(String[] args) throws IOException {

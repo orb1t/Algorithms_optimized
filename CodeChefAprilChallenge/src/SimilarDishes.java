@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * Created by Jerry on 12-04-2017.
+ * Created by Prit Sheth on 12-04-2017.
  */
 public class SimilarDishes {
     public static void main(String[] args) throws IOException {

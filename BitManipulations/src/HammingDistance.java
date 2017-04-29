@@ -1,5 +1,5 @@
 /**
- * Created by Jerry on 24-03-2017.
+ * Created by Prit Sheth on 24-03-2017.
  */
 public class HammingDistance {
 

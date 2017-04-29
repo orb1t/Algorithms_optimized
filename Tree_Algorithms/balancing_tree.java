@@ -6,7 +6,7 @@
 
 /**
  *
- * @author Jerry
+ * @author Prit Sheth
  */
 public class balancing_tree {
     

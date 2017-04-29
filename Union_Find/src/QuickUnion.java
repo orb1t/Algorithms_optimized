@@ -1,5 +1,5 @@
 /**
- * Created by Jerry on 23-02-2017.
+ * Created by Prit Sheth on 23-02-2017.
  */
 public class QuickUnion {
 

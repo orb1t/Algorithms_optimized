@@ -7,7 +7,7 @@
 
 /**
  *
- * @author Jerry
+ * @author Prit Sheth
  */
 public class diameter_node {
     

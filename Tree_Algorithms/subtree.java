@@ -7,7 +7,7 @@
 
 /**
  *
- * @author Jerry
+ * @author Prit Sheth
  */
 public class subtree {
       public Boolean isSub(node root1,node root2)
