@@ -30,9 +30,9 @@ public class SimilarDishes {
             }
 
             int length = str1.length;
-            if(length % 2 == 0 && sameDishCount >= (length/2))
+            if (length % 2 == 0 && sameDishCount >= (length / 2))
                 System.out.println("similar");
-            else if (length % 2 == 1 && sameDishCount >= (length/2)+1)
+            else if (length % 2 == 1 && sameDishCount >= (length / 2) + 1)
                 System.out.println("similar");
 
             else

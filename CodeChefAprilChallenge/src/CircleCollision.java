@@ -12,18 +12,17 @@ public class CircleCollision {
         int n = in.nextInt();
         int k = in.nextInt();
         int[] r = new int[n];
-        for(int r_i=0; r_i < n; r_i++){
+        for (int r_i = 0; r_i < n; r_i++) {
             r[r_i] = in.nextInt();
         }
         // Write Your Code Here
 
 
-
     }
 
 
-    public long getArea(int r){
-        return (22/7)*r*r;
+    public long getArea(int r) {
+        return (22 / 7) * r * r;
     }
 
 }

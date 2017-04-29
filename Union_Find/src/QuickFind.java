@@ -15,6 +15,7 @@ public class QuickFind {
 
     /**
      * This union method will take O(n) time for each union call.
+     *
      * @param a
      * @param b
      */
@@ -30,6 +31,7 @@ public class QuickFind {
 
     /**
      * This will give you the parent of any element in constant time.
+     *
      * @param a
      * @return
      */
@@ -39,6 +41,7 @@ public class QuickFind {
 
     /**
      * Constant time to check!!
+     *
      * @param source
      * @param destination
      * @return

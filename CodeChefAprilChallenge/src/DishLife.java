@@ -31,7 +31,7 @@ public class DishLife {
         Set<String> set = new HashSet<>();
         while (N > 0) {
             if (set.size() == K) {
-                while(N-->0)
+                while (N-- > 0)
                     in.readLine();
                 return "some";
             }
@@ -50,7 +50,6 @@ public class DishLife {
 
 
     }
-
 
 
 }

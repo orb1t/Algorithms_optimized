@@ -6,11 +6,10 @@
 
 
 /**
- *
  * @author Prit Sheth
  */
 public class Linknode {
-int data;
-Linknode left;
-Linknode right;
+    int data;
+    Linknode left;
+    Linknode right;
 }

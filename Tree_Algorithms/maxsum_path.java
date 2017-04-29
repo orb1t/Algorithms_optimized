@@ -6,15 +6,14 @@
 
 
 /**
- *
  * @author Prit Sheth
  */
 public class maxsum_path {
-    
-    
-   private int maxpathsum = Integer.MIN_VALUE;
 
-    public int maxPathSum(node root){  //right method for maximmum path sum
+
+    private int maxpathsum = Integer.MIN_VALUE;
+
+    public int maxPathSum(node root) {  //right method for maximmum path sum
         if (root == null)
             return maxpathsum;
         maxPathSumhelper(root);
@@ -23,9 +22,9 @@ public class maxsum_path {
 
     private int maxPathSumhelper(node root) {
         int leftmax, rightmax;
-        if (root.left == null && root.right == null){
-        if (root.data > maxpathsum)
-            maxpathsum = root.data;
+        if (root.left == null && root.right == null) {
+            if (root.data > maxpathsum)
+                maxpathsum = root.data;
             return root.data;
         }
 
@@ -46,15 +45,15 @@ public class maxsum_path {
         return localmax;
     }
 
-    
-     private int max(int a, int b, int c){
-    if (a >= b && a >=c)
-        return a;
-    else if (b>=c)
-        return b;
-    else
-        return c;
-    }  
-    
-    
+
+    private int max(int a, int b, int c) {
+        if (a >= b && a >= c)
+            return a;
+        else if (b >= c)
+            return b;
+        else
+            return c;
+    }
+
+
 }

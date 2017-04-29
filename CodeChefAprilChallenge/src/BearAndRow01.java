@@ -33,9 +33,9 @@ public class BearAndRow01 {
                 dist += totalOne;
             }
 */
-            if(i == len-1 && chars[i] == '0')
+            if (i == len - 1 && chars[i] == '0')
                 dist += totalOne;
-            else if(chars[i] == '0' && chars[i+1]=='1'){
+            else if (chars[i] == '0' && chars[i + 1] == '1') {
                 dist += totalOne;
             }
 

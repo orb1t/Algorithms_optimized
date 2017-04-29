@@ -2,8 +2,8 @@
  * Created by Prit Sheth on 11-02-2017.
  */
 public class TreeNode {
-   public int data;
-   public TreeNode left;
+    public int data;
+    public TreeNode left;
     public TreeNode right;
 
 

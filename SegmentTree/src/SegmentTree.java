@@ -97,8 +97,7 @@ public class SegmentTree {
         return (i < j) ? i : j;
     }
 
-     int nextPowerOf2( int n)
-    {
+    int nextPowerOf2(int n) {
         n--;
         n |= n >> 1;
         n |= n >> 2;

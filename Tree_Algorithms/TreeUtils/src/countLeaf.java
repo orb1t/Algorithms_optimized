@@ -22,7 +22,7 @@ public class countLeaf {
         int min1 = getMinimum(root);
         int min2 = getSecondMinimum(root, min1);
 
-        return min2-min1;
+        return min2 - min1;
     }
 
 
@@ -35,7 +35,7 @@ public class countLeaf {
         int rightMin = getMinimum(root.right);
 
         int a = (leftMin < rightMin) ? leftMin : rightMin;
-  return (root.data < a) ? root.data : a;
+        return (root.data < a) ? root.data : a;
     }
 
     public int getSecondMinimum(TreeNode root, int min) {
@@ -44,15 +44,14 @@ public class countLeaf {
         if (root.left == null && root.right == null) return root.data;
 
 
-        int leftMin = getSecondMinimum(root.left,min);
-        int rightMin = getSecondMinimum(root.right,min);
+        int leftMin = getSecondMinimum(root.left, min);
+        int rightMin = getSecondMinimum(root.right, min);
 
-        if(leftMin == min) return rightMin;
-        else if(rightMin == min)return leftMin;
+        if (leftMin == min) return rightMin;
+        else if (rightMin == min) return leftMin;
         else
-        return (leftMin < rightMin) ? leftMin : rightMin;
+            return (leftMin < rightMin) ? leftMin : rightMin;
     }
-
 
 
 }

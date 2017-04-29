@@ -5,12 +5,10 @@ public class Main {
 
 
     /**
-     *           0
-     *      1          2
+     * 0
+     * 1          2
      * 3       4     5  6
-     *  7    8     9
-     *
-     *
+     * 7    8     9
      */
 
 
@@ -36,14 +34,11 @@ public class Main {
         root3.right = root7;
         root4.left = root8;
 
-LevelOrderRunner levelOrderRunner = new LevelOrderRunner();
+        LevelOrderRunner levelOrderRunner = new LevelOrderRunner();
         levelOrderRunner.traverse(root);
 
 
     }
-
-
-
 
 
 }

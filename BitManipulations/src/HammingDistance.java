@@ -30,7 +30,7 @@ public class HammingDistance {
     public static int toggled(int x) {
 
         for (int i = 0; i < 31; i++) {
-          x ^= 1<<i;
+            x ^= 1 << i;
         }
         return x;
     }

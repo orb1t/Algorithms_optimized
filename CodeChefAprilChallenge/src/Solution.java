@@ -149,7 +149,7 @@ public class Solution {
             down += edge.b1;
         }
 
-        System.out.println(asFraction(up,down));
+        System.out.println(asFraction(up, down));
     }
 
     public static long gcm(long a, long b) {

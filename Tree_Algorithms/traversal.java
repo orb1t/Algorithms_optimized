@@ -6,56 +6,48 @@
 
 
 /**
- *
  * @author Prit Sheth
  */
 public class traversal {
-    
+
     //-----------------------------normal traversal using recursion  -------------------------------------     
-    public void  itraverse(node root)
-    {
-        if(root==null)
-        return ;
-    
+    public void itraverse(node root) {
+        if (root == null)
+            return;
+
         itraverse(root.left);
-        System.out.println("  "+root.data);
+        System.out.println("  " + root.data);
         itraverse(root.right);
-        
+
     }
-    
-    
-    public void  pretraverse(node root)
-    {
-    
-    if(root==null)
-        return ;
-     System.out.println("  "+root.data);
+
+
+    public void pretraverse(node root) {
+
+        if (root == null)
+            return;
+        System.out.println("  " + root.data);
         itraverse(root.left);
-        
+
         itraverse(root.right);
-        
+
     }
-    
-    
-    
-    public void  posttraverse(node root)
-    {
-    
-    if(root==null)
-        return ;
-    
+
+
+    public void posttraverse(node root) {
+
+        if (root == null)
+            return;
+
         itraverse(root.left);
-        
+
         itraverse(root.right);
-        System.out.println("  "+root.data);
-        
+        System.out.println("  " + root.data);
+
     }
-    
-    
-  //------end of normal traverse using recursion
-    
-    
-    
-    
-    
+
+
+    //------end of normal traverse using recursion
+
+
 }

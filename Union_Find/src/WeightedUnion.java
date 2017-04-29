@@ -55,16 +55,15 @@ public class WeightedUnion {
         return findRoot(source) == findRoot(destination);
     }
 
-    private void weightedUnion(int a, int b){
+    private void weightedUnion(int a, int b) {
         int c = findRoot(a);
         int p = findRoot(b);
-        if(size[c]<=size[p]){
-            id[c] =p;
-            size[p]+=size[c];
-        }
-        else{
-            id[p]=c;
-            size[c]+=size[p];
+        if (size[c] <= size[p]) {
+            id[c] = p;
+            size[p] += size[c];
+        } else {
+            id[p] = c;
+            size[c] += size[p];
         }
     }
 

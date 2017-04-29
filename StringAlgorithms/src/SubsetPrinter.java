@@ -7,10 +7,10 @@ public class SubsetPrinter {
 
     }
 
-    public static void printSubsets(String word){
+    public static void printSubsets(String word) {
 
         char allChars[] = word.toCharArray();
-        
+
 
     }
 

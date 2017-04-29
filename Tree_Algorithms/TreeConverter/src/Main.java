@@ -5,23 +5,20 @@ public class Main {
 
 
     /**
-     *           0
-     *      1          2
+     * 0
+     * 1          2
      * 3       4     5  6
-     *  7    8     9
-     *
-     *
+     * 7    8     9
      */
 
 
     public static void main(String[] args) {
 
-        TreeNode root =  getDummyTree();
-MirrorCreator mirrorCreator = new MirrorCreator();
-mirrorCreator.createMirror(root);
+        TreeNode root = getDummyTree();
+        MirrorCreator mirrorCreator = new MirrorCreator();
+        mirrorCreator.createMirror(root);
         LevelOrderRunner levelOrderRunner = new LevelOrderRunner();
         levelOrderRunner.traverse(root);
-
 
 
     }
