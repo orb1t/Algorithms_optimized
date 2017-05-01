@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * @author Prit Sheth
  */
-public class TreeNode {
+public class TreeNodeMain {
 
     /**
      * 0

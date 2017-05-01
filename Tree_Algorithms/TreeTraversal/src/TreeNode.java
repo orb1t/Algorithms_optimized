@@ -1,7 +1,7 @@
 /**
  * Created by Prit Sheth on 11-02-2017.
  */
-public class TreeNode {
+ class TreeNode {
     int data;
     TreeNode left;
     TreeNode right;

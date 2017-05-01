@@ -1,5 +1,3 @@
-package TreePrinter;
-
 /**
  * Created by Prit Sheth on 20-03-2017.
  */
@@ -7,10 +5,12 @@ public class Main {
 
 
     /**
-     * 0
-     * 1          2
+     *           0
+     *      1          2
      * 3       4     5  6
-     * 7    8     9
+     *  7    8     9
+     *
+     *
      */
 
 
@@ -36,8 +36,17 @@ public class Main {
         root3.right = root7;
         root4.left = root8;
 
+        /*LeftView leftView = new LeftView();
+        leftView.printLeftView(root);
+*/
+        VerticalOrder verticalOrder = new VerticalOrder();
+        verticalOrder.printVerticalOrder(root);
+
 
     }
+
+
+
 
 
 }

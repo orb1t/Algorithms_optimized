@@ -1,5 +1,3 @@
-package TreePrinter;
-
 /**
  * Created by Prit Sheth on 11-02-2017.
  */
