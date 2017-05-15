@@ -38,10 +38,13 @@ public class Main {
 
         /*LeftView leftView = new LeftView();
         leftView.printLeftView(root);
-*/
+*//*
         VerticalOrder verticalOrder = new VerticalOrder();
         verticalOrder.printVerticalOrder(root);
+*/
 
+        KDistanceAway kDistanceAway = new KDistanceAway();
+        kDistanceAway.printkDistanceUp(root,root3,3);
 
     }
 
