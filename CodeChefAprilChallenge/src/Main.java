@@ -3,6 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.Stack;
 import java.util.TreeSet;
 
 /**
@@ -17,11 +18,57 @@ public class Main {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         int count = Integer.parseInt(in.readLine());
 
+        String answers[] = new String[count];
+
         for (int i = 0; i < count; i++) {
-            System.out.println(getMaxCost(in.readLine()));
+            answers[i] = getPostfix(in.readLine());
+        }
+    }
+
+
+
+  public  static  boolean  isOperator(char c)
+    {
+        if(c == '+' || c == '-' || c == '*' || c == '/')
+            return true;
+        return false;
+    }
+
+    
+
+    public static String getPostfix(String inputPrefix){
+        char[] prefix = inputPrefix.toCharArray();
+        Stack<String> st = new Stack<>();
+        String postfix = "";
+        String top1,top2="";
+        for (int i = prefix.length -1; i >= 0 ; i--) {
+
+
+            if (isOperator(prefix[i]))
+            {
+                top1 = st.peek();
+                st.pop();
+                top2 = st.peek();
+                st.pop();
+
+                top2 += prefix[i];
+                st.push(top1 + top2);
+            }
+            else
+            {
+                top1 = "";
+                top1 += prefix[i];
+                st.push(top1);
+            }
         }
 
+         postfix = st.peek();
+        st.pop();
+       return postfix;
     }
+        
+
+
 
     public static int getMaxCost(String data) {
         int cost = 0;
