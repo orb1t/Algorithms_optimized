@@ -18,9 +18,10 @@ public class Main {
 
 
         Reverser reverser = new Reverser();
-        reverser.reverseList(a1);
-        a1.next = null;
-//        reverser.printAll(a5);
+//        reverser.reverseList(a1);
+//        a1.next = null;
+        ListNode listNode = reverser.reverseIterative(a1);
+        ListUtil.printAll(listNode);
 
 
     }
