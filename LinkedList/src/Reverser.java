@@ -34,10 +34,8 @@ public class Reverser {
 
     public ListNode reverseIterative(ListNode head) {
 
-        ListNode first = head;
-        ListNode second = head.next;
-        first.next = null;
-
+        ListNode first = null;
+        ListNode second = head;
 
         while (second != null) {
             ListNode temp = second.next;

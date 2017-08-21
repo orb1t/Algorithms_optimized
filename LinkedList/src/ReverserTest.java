@@ -24,7 +24,7 @@ public class ReverserTest {
 
 
         Reverser reverser = new Reverser();
-        ListNode reverseListNode = reverser.reverseList(a1);
+        ListNode reverseListNode = reverser.reverseIterative(a1);
 
         a5.next = a4;
         a4.next = a3;

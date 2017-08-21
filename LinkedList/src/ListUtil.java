@@ -9,6 +9,13 @@ public class ListUtil {
         printAll(head.next);
     }
 
+    public static void printAll(RandomListNode head) {
+        if (head == null)
+            return;
+        System.out.println(head.label);
+        printAll(head.next);
+    }
+
     public static ListNode getLast(ListNode head) {
         if (head.next == null)
             return head;

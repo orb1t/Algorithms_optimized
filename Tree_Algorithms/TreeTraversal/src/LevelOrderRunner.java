@@ -1,4 +1,6 @@
+import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Queue;
 
 /**
@@ -10,6 +12,41 @@ public class LevelOrderRunner implements TraversalRunner {
     public static void main(String[] args) {
 
     }
+
+    public List<Double> averageOfLevels(TreeNode root) {
+        List<Double> answer = new ArrayList<>();
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
+        answer.add((double) root.data);
+        int child = 0, parent = 1, divisor = 1;
+        double sum = 0;
+        while (queue.isEmpty()) {
+
+            TreeNode node = queue.remove();
+            sum += node.data;
+            parent--;
+
+            if (node.left != null) {
+                queue.add(node.left);
+                child++;
+            }
+
+            if (node.right != null) {
+                queue.add(node.right);
+                child++;
+            }
+
+            //next level
+            if (parent == 0) {
+                parent = child;
+                divisor = child;
+                answer.add(sum / divisor);
+            }
+
+        }
+return answer;
+    }
+
 
     @Override
     public void traverse(TreeNode root) {
