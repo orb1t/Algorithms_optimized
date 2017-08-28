@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
 
 /**
@@ -11,7 +10,7 @@ public class PrimeNumber {
 
     public static void main(String[] args) {
         System.out.println("isPrime: " + isPrime(10));
-        getPrimeNumber(100);
+        System.out.println(answer(1000));
     }
 
     private static boolean isPrime(int number) { // root of N : complexity
@@ -68,5 +67,30 @@ public class PrimeNumber {
 
     }
 
+    public static String getPrimeString(int number) {
+
+        boolean sieves[] = new boolean[number + 1];
+        String answer = "";
+        for (int i = 2; i * i < number; i++) {
+            if (!sieves[i])
+                for (int j = 2 * i; j <= number; j += i) {
+                    sieves[j] = true;
+                }
+        }
+
+        //creating String from all primes
+        for (int i = 2; i < number; i++) {
+            if (!sieves[i])
+                answer += i;
+        }
+        return answer;
+    }
+
+
+    public static String answer(int n) {
+        String primeString = getPrimeString(25000);
+        System.out.println("length "+primeString.length());
+        return primeString.substring(n,n+5);
+    }
 
 }
